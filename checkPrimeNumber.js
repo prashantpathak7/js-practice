@@ -1,4 +1,4 @@
-const givenNumber = 456785;
+const givenNumber = 124687;
 let a = 'a Prime';
 for (i = 3; givenNumber > i; i++) {
   if (givenNumber % i == 0) {
