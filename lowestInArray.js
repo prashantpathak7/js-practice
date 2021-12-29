@@ -1,10 +1,10 @@
-const givenArray = [12, 65, 94, 1, 31];
-let lowestNumber = 0;
-for (i = 0; i < givenArray.length; i++) {
-  for (j = 0; j < givenArray.length; j++) {
-    if (givenArray[i] > givenArray[j]) {
-      lowestNumber = givenArray[j];
+function minArray(givenArray) {
+  let min = givenArray[0];
+  for (i = 1; i < givenArray.length; i++) {
+    if (min > givenArray[i]) {
+      min = givenArray[i];
     }
   }
+  return min;
 }
-console.log(`lowest number in array is ${lowestNumber}`);
+console.log(minArray([12, 65, 94, 31]));
