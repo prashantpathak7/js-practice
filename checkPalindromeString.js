@@ -1,13 +1,10 @@
-const givenString = 'racecar';
-const a = givenString.length - 1;
-let newString = givenString[a];
-
-for (i = a - 1; i >= 0; i--) {
-  newString = newString + givenString[i];
+function isPal(a) {
+  //racecar
+  for (i = 0; i < a.length / 2; i++) {
+    if (a[i] !== a[a.length - 1 - i]) {
+      return 0;
+    }
+  }
+  return 1;
 }
-
-if (newString == givenString) {
-  console.log(`${givenString} is a Palindrome string`);
-} else {
-  console.log(`${givenString} is not a Palindrome string`);
-}
+console.log(isPal('racecar'));
