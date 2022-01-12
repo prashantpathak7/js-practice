@@ -10,7 +10,8 @@ function same(a, b) {
     if (c === -1) {
       return false;
     }
+    b.splice(c, 1);
   }
   return true;
 }
-console.log(same([1, 2, 4], [16, 1, 4]));
+console.log(same([2, 4, 4], [16, 16, 4]));
